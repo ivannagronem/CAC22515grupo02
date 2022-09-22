@@ -2,9 +2,57 @@
 
 
 /*
-Colour palette
-
-
-
-
+01. General
+02. Header
+03. Footer
 */
+
+
+/*01. General*/
+/*
+Colour palette
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*02. Header*/
+.nav-bar{
+    display: flex;
+    background-color: grey;
+    height: 30 vh;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+nav ul{
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li{
+    list-style-type: none;
+    margin: 0.5em;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:black
+}
+
+nav img{
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+
+
+
+/* 03. Footer*/
