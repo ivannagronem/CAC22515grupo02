@@ -34,7 +34,7 @@ nav{
     display: flex;
     background-color: #EEE3CB;
     width: 100%;
-    height: 8rem;
+    height: 120px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -69,7 +69,7 @@ nav ul li a:hover{
     transition: .5s;
 }
 
-a.active{
+nav ul li a.active{
     color:#FFFFFF;
     background: #967E76;
 }
@@ -88,7 +88,7 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: #FFFFFF;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
@@ -111,7 +111,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: #eee3cb7b;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
