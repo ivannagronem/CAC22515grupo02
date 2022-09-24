@@ -2,20 +2,32 @@
 
 
 /*
+----------------
+     Index
+----------------
 01. General
-02. Header
-03. Footer
+02. Home
+03. Media Query
+04. Products
+05. About
+07. Contact
+----------------
 */
 
 
-/*01. General*/
+/*
+----------------
+01. General
+----------------
+*/
+
 /*
 Colour palette
-#B7C4CF
-#EEE3CB
-#D7C0AE
-#967E76
-https://colorhunt.co/palette/b7c4cfeee3cbd7c0ae967e76
+#FEF5ED
+#D3E4CD
+#ADC2A9
+#99A799
+https://colorhunt.co/palette/fef5edd3e4cdadc2a999a799
 */
 
 *{
@@ -29,15 +41,21 @@ body{
 }
 
 
-/*02. Header*/
+/*
+----------------
+02. Home
+----------------
+*/
+
 nav{
     display: flex;
-    background-color: #EEE3CB;
+    background-color: #99A799;
     width: 100%;
     height: 120px;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+	position:fixed;
+	z-index: 100;
 }
 
 .nav-logo{
@@ -58,20 +76,20 @@ nav ul li{
  
 nav ul li a{
     text-decoration: none;
-    color: #967E76;
-    padding: 0.5rem;     
+    color: #FFFFFF;
+    padding: 0.75rem;     
     border-radius: 5rem;
 }
 
 nav ul li a:hover{
-    color:#FFFFFF;
-    background: #D7C0AE;
+    color:#99A799;
+    background: #FFFFFF;
     transition: .5s;
 }
 
 nav ul li a.active{
-    color:#FFFFFF;
-    background: #967E76;
+    color:#000000;
+	background-color: #FFFFFF;
 }
 
 #nav-toggle {
@@ -93,6 +111,94 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
+
+footer div{
+	display: flex;
+	color: #FFFFFF;
+	background-color: #99A799;
+	width: 100%;
+	bottom:0;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	position: absolute;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 1rem;
+}
+ 
+footer ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0.9rem;     
+    border-radius: 100%;
+}
+
+footer ul li a:hover{
+	text-shadow: 2px 2px 4px #343934;
+	transition: .5s;
+}
+
+/*
+----------------
+04. Media Query
+----------------
+*/
+
+/* Breakpoint for tablets & small screens */
+@media screen and (max-width: 1024px) {
+	nav-logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav ul {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 120px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #D3E4CD;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	nav :checked ~ ul {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+
+	
+}
+
+/* Breakpoint for smartphone*/
 @media screen and (max-width: 768px) {
 	nav-logo {
 		float: none;
@@ -111,13 +217,13 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: #eee3cb7b;
+		background-color: #D3E4CD;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
 	}
 	nav ul li a {
-		font-size: 20px;
+		font-size: 28px;
 	}
 	nav :checked ~ ul {
 		bottom: 0;
