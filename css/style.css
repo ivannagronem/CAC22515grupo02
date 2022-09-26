@@ -249,18 +249,48 @@ footer ul li a:hover{
 ----------------
 */
 
-.img{ 
-	width: 25%;
-	height: 25%;
+#imagen{
+	max-width: 50%;
+	max-height: 50%;
+	align-items: center;
 }
-.contenedor{
+.img{ 
+	max-width: 	50%;
+	max-height: 50%;
+}
+.contenedormates{
 	width: 100%;
 	position: relative;
 	height: 780px;
 
 }
+.contenedorcuencos{
+	width: 100%;
+	position: relative;
+	height: 780px;
+}
+.contenedortablas{
+	width: 100%;
+	position: relative;
+	height: 780px;
+}
+.contenedorazucareras{
+	width: 100%;
+	position: relative;
+	height: 780px;
+}
+.contenedorbombillas{
+	width: 100%;
+	position: relative;
+	height: 780px;
+}
+.contenedorcombos{
+	width: 100%;
+	position: relative;
+	height: 780px;
+}
 .botones{
-	font-size: 30px;
+	font-size: 20px;
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
