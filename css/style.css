@@ -53,7 +53,7 @@ body{
     display: flex;
     background-color: #99A799;
     width: 100%;
-    height: 120px;
+    height: 12rem;
     justify-content: space-between;
     align-items: center;
 	position:fixed;
@@ -134,26 +134,27 @@ body{
 	}
 
 .home-slider-main{
-	top: 120px;
+	position: relative;
 }	
 	
 .home-slider-container {
-	overflow: hidden; 
+	overflow: hidden;
 }
 
-.home-image-slide { 
-	width: 20%; 
-	float: left; 
-}
-
-.home-slider-images { 
+.home-slider-auto { 
 	position: relative;
 	width: 500%;
 	margin: 0;
+	padding-top: 12rem;
 	left: 0;
 	text-align: left;
 	font-size: 0;
 	animation: 30s slider_effect infinite; 
+}
+
+.home-image-slide { 
+	width: 20%;
+	float: left;
 }
 
 footer{
