@@ -200,19 +200,85 @@ footer{
 ----------------
 */
 
+.container{
+display: grid;
+grid-template-areas: "uno dos"
+					 "tres cuatro"
+					 "cinco seis"; 		
+background-color: #ADC2A9;
+align-content: center;			 
+
+}
+
+.titulo{
+	background-color:#D3E4CD;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+.s1{
+	display: grid;
+	width: 90%;
+	grid-area: uno;
+	align-content: center;
+	/*border: 3px double red;*/
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 90%;
+	
+}
+.s2{
+	grid-area: dos;
+	display: grid;
+	width: 90%;
+	height: 90%;
+}
+.s3{
+	grid-area: tres;
+	width: 90%;
+	height: 90%;
+}
+.s4{
+	grid-area: cuatro;
+	width: 90%;
+	height: 90%;
+}
+.s5{
+	grid-area: cinco;
+	width: 90%;
+	height: 90%;
+}
+.s6{
+	grid-area: seis;
+	width: 90%;
+	height: 90%;
+}
+
+.subtitulos{
+	text-align: center;
+	background-color: #FEF5ED;
+
+}
+.parrafo{
+	background-color: #FEF5ED;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	font-size: 150%;
+}
+
 #imagen{
-	max-width: 50%;
-	max-height: 50%;
+	max-width: 100%;
+	max-height: 100%;
 	align-items: center;
 }
 .img{ 
-	max-width: 	50%;
-	max-height: 50%;
+	max-width: 	100%;
+	max-height: 100%;
 }
 .contenedormates{
 	width: 100%;
 	position: relative;
-	height: 780px;
 
 }
 .contenedorcuencos{
@@ -241,13 +307,13 @@ footer{
 	height: 780px;
 }
 .botones{
-	font-size: 20px;
+	font-size: 18px;
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
 	border-radius: 50%;
 	background-color: rgba(0,0,0,.7);
-	text-align: center;
+	text-align: center;	
 	font-weight: bold;
 	position: absolute;
 	color: #FFFFFF;
