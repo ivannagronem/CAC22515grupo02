@@ -157,6 +157,27 @@ body{
 	float: left;
 }
 
+.home-categories-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 25%;
+}
+
+.home-category-card{
+	display: flex;
+	background-color:#FEF5ED;
+    height: 100%;
+    width: 25%;
+    border: 1px;
+    text-align: center;
+}
+
+.home-category-card .img{
+    height: 15%;
+    width: 15%;
+}
+
 footer{
 	display: flex;
 	color: #FFFFFF;
