@@ -41,7 +41,7 @@ html{
 
 main{
 	overflow: auto;
-	padding-bottom: 2rem;
+	padding-top: 12rem;
 }
 
 h2 {
@@ -162,7 +162,6 @@ body{
 	position: relative;
 	width: 500%;
 	margin: 0;
-	padding-top: 12rem;
 	left: 0;
 	text-align: left;
 	font-size: 0;
@@ -180,8 +179,8 @@ body{
 .home-categories-container{
 	margin: 2.5rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 2rem;
 }
 
 .home-category-card{
@@ -191,6 +190,7 @@ body{
 	align-content: center;
 	border-radius: 1rem;
 	padding: 1rem;
+	height: 20rem;
 }
 
 .home-category-card-img{
@@ -383,6 +383,61 @@ align-content: center;
 ----------------
 */
 
+.about-section{
+	background-image: url("./backgrounds/wood.jpeg");
+}
+
+  
+.about-container{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows: 50rem 50rem 50rem;
+	grid-template-areas: 
+	"about-intro-text about-intro-text"
+	"about-story-image about-story-text"
+	"about-value-text about-value-image";
+}
+.about-item-regular{
+	background-color: #FFFFFF;
+	border: 0.1rem #FFFFFF;
+	display: grid;
+	text-align: center;
+	align-content: center;
+}
+
+.about-item-regular-image{
+	background-color: #ffffff77;
+}
+
+.about-item-special{
+	grid-column-start: 1;
+    grid-column-end: 3;
+	display: grid;
+	text-align: center;
+	align-content: center;
+	color:#FFFFFF;
+}
+
+#about-intro-text{
+	grid-area: about-intro-text;
+}
+
+#about-story-image{
+	grid-area: about-story-image;
+}
+
+#about-story-text{
+	grid-area: about-story-text;
+}
+
+#about-value-image{
+	grid-area: about-value-image;
+}
+
+#about-value-text{
+
+}
+
 
 /*
 ----------------
@@ -405,7 +460,7 @@ align-content: center;
 }
 
 /* Breakpoint for tablets & small screens */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
 	nav-logo {
 		float: none;
 		width: auto;
@@ -531,5 +586,23 @@ align-content: center;
 
 	#home-slider-desktop{
 		display: none;
+	}
+
+	.about-container{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 50rem 30rem 30rem 30rem 30rem;
+		grid-template-areas: 
+		 "about-intro-text"
+		 "about-story-image"
+		 "about-story-text"
+		 "about-value-image"
+		 "about-value-text";
+		gap: 0.1rem;
+	}
+
+	.about-item-special{
+		grid-column-start: 1;
+		grid-column-end: 1;
 	}
 }
