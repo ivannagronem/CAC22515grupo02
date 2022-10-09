@@ -36,6 +36,23 @@ https://colorhunt.co/palette/fef5edd3e4cdadc2a999a799
 
 html{
 	font-size: 62.5%;
+	height: 100%;
+}
+
+main{
+	overflow: auto;
+	padding-bottom: 2rem;
+}
+
+h2 {
+	margin: 2rem;
+	font-size: 3rem;
+}
+
+
+
+h3 {
+	font-size: 2rem;
 }
 
 body{
@@ -152,38 +169,41 @@ body{
 	animation: 30s slider_effect infinite; 
 }
 
+
 .home-image-slide { 
 	width: 20%;
+	height: 100%;
 	float: left;
 }
 
+
 .home-categories-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 25%;
+	margin: 2.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 20px;
 }
 
 .home-category-card{
-	display: flex;
-	background-color:#FEF5ED;
-    height: 100%;
-    width: 25%;
-    border: 1px;
-    text-align: center;
+	display: grid;
+	background-color: #FEF5ED;
+	text-align: center;
+	align-content: center;
+	border-radius: 1rem;
+	padding: 1rem;
 }
 
-.home-category-card .img{
-    height: 15%;
-    width: 15%;
+.home-category-card-img{
+	width: 5rem;
 }
+
 
 footer{
 	display: flex;
 	color: #FFFFFF;
 	background-color: #99A799;
 	width: 100%;
-	bottom:0;
+	padding-bottom:0;
 	justify-content: center;
 	align-self: center;
 	align-items: center;
@@ -377,8 +397,15 @@ align-content: center;
 ----------------
 */
 
+/* Breakpoint for desktop*/
+@media screen and (min-width: 1025px) {
+	#home-slider-mobile{
+		display: none;
+	}
+}
+
 /* Breakpoint for tablets & small screens */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 768px) {
 	nav-logo {
 		float: none;
 		width: auto;
@@ -425,6 +452,10 @@ align-content: center;
 	}
 	.nav-bar :checked ~ .nav-icon-burger .burger-line:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
+	}
+
+	#home-slider-mobile{
+		display: none;
 	}
 
 	
@@ -482,5 +513,23 @@ align-content: center;
 		transform: translateY(-10px) rotate(-225deg);
 	}
 
+	.home-slider-auto-desktop { 
+		display: none;
+	}
 	
+	.home-slider-auto-mobile {
+		display: show; 
+		position: relative;
+		width: 500%;
+		margin: 0;
+		padding-top: 12rem;
+		left: 0;
+		text-align: left;
+		font-size: 0;
+		animation: 30s slider_effect infinite; 	
+	}
+
+	#home-slider-desktop{
+		display: none;
+	}
 }
