@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     carrouseltablas (contenedortablas);
 });
 
-var imagenesazucareras = ["images/Products/Azucarerassurtidas.jpeg","images/Products/azucareras.jpeg", "images/Products/azucareras2.JPG", "images/Products/cilindrocontapa.jpeg"]
+var imagenesazucareras = ["images/Products/Azucarerassurtidas.jpeg","images/Products/azucareras.JPG", "images/Products/azucareras2.JPG", "images/Products/cilindrocontapa.jpeg"]
     cont = 0;
 function carrouselazucareras (contenedorazucareras){
     contenedorazucareras.addEventListener("click", e => {
