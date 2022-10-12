@@ -251,49 +251,67 @@ align-content: center;
 
 }
 
-.titulo{
-	background-color:#D3E4CD;
-	font-family: 'Poppins', sans-serif;
-	text-align: center;
-}
+
 .s1{
 	display: grid;
 	width: 90%;
 	grid-area: uno;
-	align-content: center;
-	/*border: 3px double red;*/
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 90%;
+	height: 70%;
 	
 }
 .s2{
-	grid-area: dos;
 	display: grid;
 	width: 90%;
-	height: 90%;
+	grid-area: dos;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 70%;
 }
 .s3{
-	grid-area: tres;
+	display: grid;
 	width: 90%;
-	height: 90%;
+	grid-area: tres;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 70%;
 }
 .s4{
-	grid-area: cuatro;
+	display: grid;
 	width: 90%;
-	height: 90%;
+	grid-area: cuatro;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 70%;
 }
 .s5{
-	grid-area: cinco;
+	display: grid;
 	width: 90%;
-	height: 90%;
+	grid-area: cinco;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 70%;
 }
 .s6{
-	grid-area: seis;
+	display: grid;
 	width: 90%;
-	height: 90%;
+	grid-area: seis;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 0.5rem grey;
+	background-color: #FEF5ED;
+	height: 70%;
 }
 
 .subtitulos{
@@ -314,38 +332,32 @@ align-content: center;
 	align-items: center;
 }
 .img{ 
-	max-width: 	100%;
-	max-height: 100%;
+	max-width: 	70%;	
+	max-height: 70%;
 }
 .contenedormates{
 	width: 100%;
 	position: relative;
-
 }
 .contenedorcuencos{
 	width: 100%;
 	position: relative;
-	height: 780px;
 }
 .contenedortablas{
 	width: 100%;
 	position: relative;
-	height: 780px;
 }
 .contenedorazucareras{
 	width: 100%;
 	position: relative;
-	height: 780px;
 }
 .contenedorbombillas{
 	width: 100%;
 	position: relative;
-	height: 780px;
 }
 .contenedorcombos{
 	width: 100%;
 	position: relative;
-	height: 780px;
 }
 .botones{
 	font-size: 18px;
