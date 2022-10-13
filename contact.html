@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="productos algarrobo, por mayor, insumos artesanos">
     <meta name="description" content="Productos de algarrobo al por mayor en Caballito. Envios a todo el pais.">
-    
+
     <!--- styles & fonts -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/f2dc045742.js" crossorigin="anonymous"></script>
@@ -45,10 +45,79 @@
     </header>
 
     <main>
-        <section class="contact-section">
-         
+
+
+        <section class="contact-main">
+
+            <h2> 
+                Contactate con @CuencosdeMadera
+                <i class="fa-brands fa-pagelines fa-xl"></i>
+
+            </h2>
+
+            <div class="contact-container">
+
+                <div class="contact-channel" id="contact-item-channel">
+                    <h3>Vias de contacto</h3>
+                </div>
+
+                <div class="contact-form" id="contact-item-form">
+                    <h3>Envianos tu mensaje</h3>
+                    <form action="https://formspree.io/f/xbjbkpkk" method="POST">
+    
+                        <label for="form-name"> Nombre: </label>
+                        <!--- relacion entre for y id permite que reaccione ante el click del usuario-->
+                        <input type="text" name="name" id="form-name" placeholder="Ingresar nombre" required>
+    
+                        </br>
+    
+                        <label> Mail:
+                            <input type="email" name="email" id="form-email" placeholder="Ingresar email" required>
+                        </label>
+                
+                        </br>
+                
+                        <label>
+                            Comentarios
+                            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                        </label>
+    
+                        </br>
+                
+                        <input type="submit" name="submit">
+                        <input type="reset" name="reset">
+    
+                
+                    </form>
+    
+                </div>
+
+                <div class="contact-map" id="contact-item-mpa">
+                    <h3> Donde estamos </h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026051980387!2d-58.45348495654554!3d-34.61663827819271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665613652834!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                </div>
+    
+                <div class="contact-transport" id="contact-item-transport">
+                    <h3> Como podes llegar </h3>
+                    <ul>
+                        <li> opcion 1</li>
+                        <li> opcion 2</li>
+                        <li> opcion 3</li>
+
+                    </ul>
+    
+                </div>
+                
+            </div>
+
         </section>
+
     </main>
+
 
     <footer>
         <div class="footer-contact">

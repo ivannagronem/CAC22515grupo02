@@ -446,17 +446,40 @@ align-content: center;
 	grid-area: about-value-image;
 }
 
-#about-value-text{
-
-}
-
-
 /*
 ----------------
 05. Contact
 ----------------
 */
 
+.contact-main{
+
+}
+
+.contact-container{
+		display: grid;
+		grid-template-columns:1fr 1fr;
+		grid-template-rows: 50rem 50rem;
+		grid-template-areas: 
+		"contact-item-channel contact-item-form"
+		"contact-item-map contact-item-transport ";
+}
+
+.contact-channel{
+	grid-area: contacto-item-channel;
+}
+
+.contact-form{
+	grid-area: contact-item-form;
+}
+
+.contact-transport{
+	grid-area: contact-item-transport;
+}
+
+.contact-map{
+	grid-area: contact-item-map;
+}
 
 /*
 ----------------
@@ -603,7 +626,7 @@ align-content: center;
 	.about-container{
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 50rem 30rem 30rem 30rem 30rem;
+		grid-template-rows: 50rem 50rem 50rem 50rem 50rem;
 		grid-template-areas: 
 		 "about-intro-text"
 		 "about-story-image"
