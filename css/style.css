@@ -446,6 +446,7 @@ align-content: center;
 	grid-area: about-value-image;
 }
 
+
 /*
 ----------------
 05. Contact
@@ -481,6 +482,16 @@ align-content: center;
 	grid-area: contact-item-map;
 }
 
+.contact-item-regular{
+	border: 0.1rem;
+	display: grid;
+	text-align: center;
+	align-content: top;
+}
+
+.contact-item-regular form{
+	
+}
 /*
 ----------------
 06. Media Query
@@ -546,6 +557,17 @@ align-content: center;
 
 	#home-slider-mobile{
 		display: none;
+	}
+
+	.contact-container{
+		display: grid;
+		grid-template-columns:100%;
+		grid-template-rows: 50rem 50rem 50rem 50rem;
+		grid-template-areas: 
+		"contact-item-channel" 
+		"contact-item-form"
+		"contact-item-map"
+		"contact-item-transport";
 	}
 
 	
@@ -629,15 +651,26 @@ align-content: center;
 		grid-template-rows: 50rem 50rem 50rem 50rem 50rem;
 		grid-template-areas: 
 		 "about-intro-text"
-		 "about-story-image"
 		 "about-story-text"
-		 "about-value-image"
-		 "about-value-text";
+		 "about-story-image"
+		 "about-value-text"
+		 "about-value-image";
 		gap: 0.1rem;
 	}
 
 	.about-item-special{
 		grid-column-start: 1;
 		grid-column-end: 1;
+	}
+
+	.contact-container{
+		display: grid;
+		grid-template-columns:100%;
+		grid-template-rows: 50rem 50rem 50rem 50rem;
+		grid-template-areas: 
+		"contact-item-channel" 
+		"contact-item-form"
+		"contact-item-map"
+		"contact-item-transport";
 	}
 }
