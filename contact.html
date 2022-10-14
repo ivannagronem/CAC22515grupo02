@@ -46,7 +46,6 @@
 
     <main>
 
-
         <section class="contact-main">
 
             <h2>
@@ -65,7 +64,7 @@
                                 @CuencosdeMadera
                             </a>
                         </li>
-                        <li >
+                        <li>
                             <i id="whatsapp" class="fab fa-whatsapp"></i>
                             <a href="https://wa.me/543434713636"> Ir a Whatapp</a>
                         </li>
@@ -78,32 +77,44 @@
 
                 <div class="contact-item-regular" id="contact-item-form">
                     <h3>Envianos tu mensaje</h3>
-                    <form class="" action="https://formspree.io/f/xbjbkpkk" method="POST">
+                    <div>
+                        <form class="contactform" name="main-contact-form" action="https://formspree.io/f/xbjbkpkk"
+                            method="POST">
 
-                        <label for="form-name"> Nombre: </label>
-                        <!--- relacion entre for y id permite que reaccione ante el click del usuario-->
-                        <input type="text" name="name" id="form-name" placeholder="Ingresar nombre" required>
+                            <label for="form-name"> Nombre: </label>
+                            <!--- relacion entre for y id permite que reaccione ante el click del usuario-->
+                            <input type="text" name="name" id="form-name" placeholder="Ingresar nombre" required>
 
-                        </br>
+                            </br>
 
-                        <label> Mail:
-                            <input type="email" name="email" id="form-email" placeholder="Ingresar email" required>
-                        </label>
+                            <label> Mail:
+                                <input type="email" name="email" id="form-email" placeholder="Ingresar email" required>
+                            </label>
 
-                        </br>
+                            </br>
 
-                        <label>
-                            Comentarios
-                            <textarea name="comments" id="" cols="30" rows="10"></textarea>
-                        </label>
+                            <label>
+                                Comentarios
+                                <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                            </label>
 
-                        </br>
+                            </br>
 
-                        <input type="submit" name="submit">
-                        <input type="reset" name="reset">
+                            <input type="submit" id="form-submit" name="submit">
+                            <input type="reset" name="reset">
 
 
-                    </form>
+                        </form>
+                    </div>
+                    <div>
+                        <p> Si necesitas consultar por presupuestos en USD, estos son los tipos de cambios al momento:
+                        </p>
+                        <p>
+                            Tipo: <span id="er_name"></span> |
+                            Compra: <span id="er_buy"></span> |
+                            Venta: <span id="er_sell"></span>
+                        </p>
+                    </div>
 
                 </div>
 
@@ -148,6 +159,8 @@
         </div>
     </footer>
 
+   <script src="./js/getexchangerate.js"></script>
+   <script src="./js/validateemail.js"></script>
 </body>
 
 </html>
