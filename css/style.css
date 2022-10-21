@@ -242,29 +242,31 @@ footer{
 */
 
 .container{
-display: grid;
-grid-template-areas: "uno dos"
-					 "tres cuatro"
-					 "cinco seis"; 		
-background-color: #ADC2A9;	
+	padding-top: 1rem;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas: "uno dos"
+						"tres cuatro"
+						"cinco seis"; 		
+	background-color: #ADC2A9;	
+	align-items: center;
+	grid-gap: 1rem;
 
 }
 
 
 .s1{
 	display: grid;
-	width: 37rem;
+	width: 100%;
+	height: 80rem;
 	grid-area: uno;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
-	
 }
 .s2{
 	display: grid;
-	width: 37rem;
+	width: 90%;
 	grid-area: dos;
 	border-radius: 20px;
 	overflow: hidden;
@@ -328,6 +330,10 @@ background-color: #ADC2A9;
 	margin-left: 20px;
 	margin-bottom: 10px;
 	font-size: 110%;
+}
+
+.products-image{
+	width: 100%;
 }
 
 .imagen{
@@ -606,6 +612,17 @@ input[type=submit] {
 		display: none;
 	}
 	
+	.container{
+		display: grid;
+		align-items: center;
+		grid-template-columns: 100%;
+		grid-template-areas:"uno"
+							"dos"
+							"tres"
+							"cuatro"
+							"cinco"
+							"seis"; 	
+	}
 }
 
 /* Breakpoint for smartphone*/
@@ -681,12 +698,15 @@ input[type=submit] {
 	}
 
 	.container{
-		grid-template-areas:"uno uno"
-							"dos dos"
-								"tres tres"
-							"cuatro cuatro"
-							"cinco cinco"
-							"seis seis"; 	
+		display: grid;
+		align-items: center;
+		grid-template-columns: 100%;
+		grid-template-areas:"uno"
+							"dos"
+							"tres"
+							"cuatro"
+							"cinco"
+							"seis"; 	
 	}
 
 	.about-container{
