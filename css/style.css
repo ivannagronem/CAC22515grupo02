@@ -246,94 +246,97 @@ display: grid;
 grid-template-areas: "uno dos"
 					 "tres cuatro"
 					 "cinco seis"; 		
-background-color: #ADC2A9;
-align-content: center;			 
+background-color: #ADC2A9;	
 
 }
 
 
 .s1{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: uno;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 	
 }
 .s2{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: dos;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 }
 .s3{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: tres;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 }
 .s4{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: cuatro;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 }
 .s5{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: cinco;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 }
 .s6{
 	display: grid;
-	width: 90%;
+	width: 37rem;
 	grid-area: seis;
 	border-radius: 20px;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 70%;
+	height: 49rem;
 }
 
 .subtitulos{
 	text-align: center;
 	background-color: #FEF5ED;
+	font-size: 2rem;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	font-weight: bold;
+	
 
 }
 .parrafo{
 	background-color: #FEF5ED;
 	margin-left: 20px;
 	margin-bottom: 10px;
-	font-size: 150%;
+	font-size: 110%;
 }
 
-#imagen{
-	max-width: 100%;
-	max-height: 100%;
-	align-items: center;
+.imagen{
+	max-width: 37rem;
+	
 }
 .img{ 
-	max-width: 	70%;	
-	max-height: 70%;
+	max-width: 	30%;	
+	max-height: 30%;
 }
 .contenedormates{
 	width: 100%;
@@ -389,12 +392,27 @@ align-content: center;
 }
 
 
+/* Breakpoint for smartphone*/
+
+@media screen and (max-width: 768px) {
+	.container{
+		grid-template-areas:"uno uno"
+					        "dos dos"
+					 		"tres tres"
+							"cuatro cuatro"
+							"cinco cinco"
+							"seis seis"; 	
+}
+
 /*
 ----------------
 04. About
 ----------------
 */
 
+.about-h4{	
+	text-align: left;
+}
 .about-section{
 	background-image: url("./backgrounds/wood.jpeg");
 }
@@ -413,8 +431,9 @@ align-content: center;
 	background-color: #FFFFFF;
 	border: 0.1rem #FFFFFF;
 	display: grid;
-	text-align: center;
+	text-align: justify;
 	align-content: center;
+	
 }
 
 .about-item-regular-image{
