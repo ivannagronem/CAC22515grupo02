@@ -250,7 +250,7 @@ footer{
 						"cinco seis"; 		
 	background-color: #ADC2A9;	
 	align-items: center;
-	grid-gap: 1rem;
+	gap: 1rem;
 
 }
 
@@ -258,7 +258,6 @@ footer{
 .s1{
 	display: grid;
 	width: 100%;
-	height: 80rem;
 	grid-area: uno;
 	border-radius: 20px;
 	box-shadow: 0 0.5rem 0.5rem grey;
@@ -266,53 +265,43 @@ footer{
 }
 .s2{
 	display: grid;
-	width: 90%;
+	width: 100%;
 	grid-area: dos;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
 }
 .s3{
 	display: grid;
-	width: 37rem;
+	width: 100%;
 	grid-area: tres;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
 }
 .s4{
 	display: grid;
-	width: 37rem;
+	width: 100%;
 	grid-area: cuatro;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
 }
 .s5{
 	display: grid;
-	width: 37rem;
+	width: 100%;
 	grid-area: cinco;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
 }
 .s6{
 	display: grid;
-	width: 37rem;
+	width: 100%;
 	grid-area: seis;
 	border-radius: 20px;
-	overflow: hidden;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	height: 49rem;
 }
 
 .subtitulos{
@@ -326,10 +315,9 @@ footer{
 
 }
 .parrafo{
-	background-color: #FEF5ED;
 	margin-left: 20px;
 	margin-bottom: 10px;
-	font-size: 110%;
+	font-size: 100%;
 }
 
 .products-image{
