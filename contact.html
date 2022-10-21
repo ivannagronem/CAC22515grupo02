@@ -55,87 +55,56 @@
 
             <div class="contact-container">
 
-                <div class="contact-item-regular" id="contact-item-channel">
-                    <h3>Vias de contacto</h3>
-                    <ul>
-                        <li>
-                            <i id="instagram" class="fab fa-instagram "></i>
-                            <a href="https://www.instagram.com/cuencosdemadera/">
-                                @CuencosdeMadera
-                            </a>
-                        </li>
-                        <li>
-                            <i id="whatsapp" class="fab fa-whatsapp"></i>
-                            <a href="https://wa.me/543434713636"> Ir a Whatapp</a>
-                        </li>
-                        <li>
-                            <i id="phone" class="fas fa-phone "></i>
-                            <a href="tel:5493434713636"> +54 934 3471 3636 </a>
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="contact-item-regular" id="contact-item-form">
-                    <h3>Envianos tu mensaje</h3>
-                    <div>
-                        <form class="contactform" name="main-contact-form" action="https://formspree.io/f/xbjbkpkk"
-                            method="POST">
+                        <h3>Envianos tu mensaje</h3>
+                        
+                        <div class="contact-form-container">
+                            <form class="contactform" name="main-contact-form" action="https://formspree.io/f/xbjbkpkk"
+                                method="POST">
 
-                            <label for="form-name"> Nombre: </label>
-                            <!--- relacion entre for y id permite que reaccione ante el click del usuario-->
-                            <input type="text" name="name" id="form-name" placeholder="Ingresar nombre" required>
+                                <div class="form-col-25">
+                                    <label for="form-name"> Nombre: </label>
+                                </div>
+                                <div class="form-col-75">
+                                    <input type="text" name="name" id="form-name" required>
+                                </div> 
+                                
+                                <div class="form-col-25">
+                                    <label for="form-email"> Email: </label>
+                                </div>
+                                <div class="form-col-75">
+                                    <input type="email" name="email" id="form-email" required>
+                                </div>  
 
-                            </br>
+                                <div class="form-col-25">
+                                    <label> Mensaje</label>
+                                </div>
+                                <div class="form-col-75">
+                                    <textarea name="comments" id="" cols="30" rows="10" required></textarea>
+                                </div>  
 
-                            <label> Mail:
-                                <input type="email" name="email" id="form-email" placeholder="Ingresar email" required>
-                            </label>
+                                <div class="form-end">
+                                <input type="submit" id="form-submit" name="submit">
+                                </div>
 
-                            </br>
+                            </form>
+                        </div>
 
-                            <label>
-                                Comentarios
-                                <textarea name="comments" id="" cols="30" rows="10"></textarea>
-                            </label>
-
-                            </br>
-
-                            <input type="submit" id="form-submit" name="submit">
-                            <input type="reset" name="reset">
-
-
-                        </form>
-                    </div>
-                    <div>
-                        <p> Si necesitas consultar por presupuestos en USD, estos son los tipos de cambios al momento:
-                        </p>
-                        <p>
-                            Tipo: <span id="er_name"></span> |
-                            Compra: <span id="er_buy"></span> |
-                            Venta: <span id="er_sell"></span>
-                        </p>
-                    </div>
-
+                        <div class="contact-form-info">
+                            <p> Si necesitas consultar por presupuestos en USD, estos son los tipos de cambios al momento:
+                            </p>
+                            <p>
+                                Tipo: <span id="er_name"></span> |
+                                Compra: <span id="er_buy"></span> |
+                                Venta: <span id="er_sell"></span>
+                            </p>
+                        </div>
                 </div>
 
-                <div class="contact-item-regular" id="contact-item-mpa">
+                <div class="contact-item-regular" id="contact-item-mapa">
                     <h3> Donde estamos </h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026051980387!2d-58.45348495654554!3d-34.61663827819271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665613652834!5m2!1ses-419!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                </div>
-
-                <div class="contact-item-regular" id="contact-item-transport">
-                    <h3> Como podes llegar </h3>
-                    <ul>
-                        <li> opcion 1</li>
-                        <li> opcion 2</li>
-                        <li> opcion 3</li>
-
-                    </ul>
-
+                    <iframe class="contact-responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026051980387!2d-58.45348495654554!3d-34.61663827819271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665613652834!5m2!1ses-419!2sar">
+                    </iframe>
                 </div>
 
             </div>

@@ -8,7 +8,6 @@ async function obtainData() {
 
         const {nombre, compra, venta} = data_er_oficial
 
-        console.log(data_er_oficial)
         console.log(nombre)
         console.log(compra)
         console.log(venta)
