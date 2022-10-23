@@ -52,8 +52,14 @@ h2 {
 
 
 h3 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
+
+h4 {
+	font-size: 2rem;
+	font: bold;
+}
+
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -393,9 +399,6 @@ footer{
 ----------------
 */
 
-.about-h4{	
-	text-align: left;
-}
 .about-section{
 	background-image: url("./backgrounds/wood.jpeg");
 }
@@ -404,11 +407,12 @@ footer{
 .about-container{
 	display: grid;
 	grid-template-columns:1fr 1fr;
-	grid-template-rows: 50rem 50rem 50rem;
+	grid-template-rows: 30rem 60rem 60rem 60rem;
 	grid-template-areas: 
 	"about-intro-text about-intro-text"
 	"about-story-image about-story-text"
-	"about-value-text about-value-image";
+	"about-value-text about-value-image"
+	"about-value2-image about-value2-text";
 }
 .about-item-regular{
 	background-color: #FFFFFF;
@@ -416,7 +420,12 @@ footer{
 	display: grid;
 	text-align: justify;
 	align-content: center;
+	padding: 5rem;
 	
+}
+
+.about-item-regular p{
+	font-size: 1.5rem;
 }
 
 .about-item-regular-image{
@@ -448,6 +457,17 @@ footer{
 	grid-area: about-value-image;
 }
 
+#about-value-text{
+	grid-area: about-value-text;
+}
+
+#about-value2-image{
+	grid-area: about-value2-image;
+}
+
+#about-value2-text{
+	grid-area: about-value2-text;
+}
 
 /*
 ----------------
@@ -700,14 +720,19 @@ input[type=submit] {
 	.about-container{
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: 50rem 50rem 50rem 50rem 50rem;
+		grid-template-rows: 30rem 60rem 30rem 60rem 30rem 60rem;
 		grid-template-areas: 
-		 "about-intro-text"
-		 "about-story-text"
-		 "about-story-image"
-		 "about-value-text"
-		 "about-value-image";
+			"about-intro-text"
+			"about-story-text"
+			"about-story-image"
+			"about-value-text"
+			"about-value-image"
+			"about-value2-text";
 		gap: 0.1rem;
+	}
+
+	.about-item-regular p{
+		font-size: 1.2rem;
 	}
 
 	.about-item-special{
