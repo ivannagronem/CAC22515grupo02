@@ -262,60 +262,58 @@ footer{
 
 .s1{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: uno;
 	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%;
 	position: relative;
+	left: 25%;
 }
 .s2{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: dos;
 	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%;
 	position: relative;
 }
 .s3{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: tres;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%
-
+	position:relative;
+	left: 25%;
 }
 .s4{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: cuatro;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%
 }
 .s5{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: cinco;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%
+	position:relative;
+	left: 25%;
 }
 .s6{
 	display: grid;
-	width: 25vw;
+	width: 28vw;
 	grid-area: seis;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
-	margin-left: 2%
 
 }
 
@@ -372,10 +370,10 @@ footer{
 	position: relative;
 }
 .botones{
-	font-size: 18px;
-	width: 70px;
-	height: 70px;
-	line-height: 70px;
+	font-size: 2rem;
+	width: 6rem;
+	height: 6rem;
+	line-height: 6rem;
 	border-radius: 50%;
 	background-color: rgba(0,0,0,.7);
 	text-align: center;	
@@ -629,17 +627,6 @@ input[type=submit] {
 		display: none;
 	}
 	
-	.container{
-		display: grid;
-		align-items: center;
-		grid-template-columns: 100%;
-		grid-template-areas:"uno"
-							"dos"
-							"tres"
-							"cuatro"
-							"cinco"
-							"seis"; 	
-	}
 }
 
 /* Breakpoint for smartphone*/
@@ -723,7 +710,34 @@ input[type=submit] {
 							"tres"
 							"cuatro"
 							"cinco"
-							"seis"; 	
+							"seis"; 						
+	}
+	.s1{
+		width: 50vw;
+	}
+	.s2{
+		width: 50vw;
+		position: relative;
+		left:25%
+	}
+	.s3{
+		width: 50vw;
+		
+	}
+	.s4{
+		width: 50vw;
+		position: relative;
+		left:25%
+	}
+	.s5{
+		width: 50vw;
+		position: relative;
+		left:25%
+	}
+	.s6{
+		width: 50vw;
+		position: relative;
+		left:25%
 	}
 
 	.about-container{
