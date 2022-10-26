@@ -255,7 +255,6 @@ footer{
 						"tres cuatro"
 						"cinco seis"; 		
 	background-color: #ADC2A9;	
-	align-items: center;
 	gap: 1rem;
 
 }
@@ -263,51 +262,61 @@ footer{
 
 .s1{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: uno;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%;
+	position: relative;
 }
 .s2{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: dos;
-	border-radius: 20px;
+	border-radius: 2rem;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%;
+	position: relative;
 }
 .s3{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: tres;
 	border-radius: 20px;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%
+
 }
 .s4{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: cuatro;
 	border-radius: 20px;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%
 }
 .s5{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: cinco;
 	border-radius: 20px;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%
 }
 .s6{
 	display: grid;
-	width: 100%;
+	width: 25vw;
 	grid-area: seis;
 	border-radius: 20px;
 	box-shadow: 0 0.5rem 0.5rem grey;
 	background-color: #FEF5ED;
+	margin-left: 2%
+
 }
 
 .subtitulos{
