@@ -626,6 +626,24 @@ input[type=submit] {
 	#home-slider-mobile{
 		display: none;
 	}
+	.s1{
+		height: 75vh;
+	}
+	.s2{
+		height: 75vh;
+	}
+	.s3{
+		height: 75vh;
+	}
+	.s4{
+		height: 75vh;
+	}
+	.s5{
+		height: 75vh;
+	}
+	.s6{
+		height: 75vh;
+	}
 }
 
 /* Breakpoint for smartphone*/
