@@ -239,8 +239,16 @@ footer{
 	transition: .5s;
 }
 
+#tablas{
+	scroll-margin-top: 12rem;
+}
 
-
+#combos{
+	scroll-margin-top: 12rem;
+}
+#cuencos{
+	scroll-margin-top: 12rem;
+}
 /*
 ----------------
 03. Products
